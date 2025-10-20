@@ -4,9 +4,10 @@ import React from 'react'
 export default function PerfilBar(props: { nome: string }) {
     return (
         <View style={styles.container}>
-            <Image style={styles.img} source={require('../assets/blank-profile-picture-973460_960_720.png')}/>
-            <Text style={styles.text}>{props.nome} </Text>/
+            <Image style={styles.img} source={require('../assets/images (2).jpg')} />
+            <Text style={styles.text}> {props.nome} </Text>
         </View>
+
     )
 }
 
@@ -17,14 +18,15 @@ const styles = StyleSheet.create({
         borderRadius: 45
     },
     container: {
-        flex: 1,
         flexDirection: 'row',
-        alignItems:'center',
-        gap:10,
-        padding:20
+        alignItems: 'center',
+        gap: 10,
+        padding: 10,
+        color: 'black'
     },
-    text:{
-        fontSize:18,
-        fontWeight:'bold'
+    text: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: 'black'
     }
 })

@@ -1,0 +1,33 @@
+{
+  "infos": [
+    {
+      "nome": "Flora",
+      "image":"https://preview.redd.it/is-flora-weak-v0-v7bja5dgc2id1.jpeg?auto=webp&s=1a557dc47f3a8b02253e1ed7e589e2387fa97e9c",
+      "titulo": "Meu lindo vaso de planta",
+      "texto": "As belas flores são um dos mais encantadores presentes da natureza. Com suas cores vibrantes, formas delicadas e perfumes suaves, elas despertam sentimentos de alegria, paz e admiração em quem as observa. Cada flor carrega uma história, um simbolismo e uma beleza única — das rosas elegantes que representam o amor, às orquídeas exóticas que simbolizam o mistério e a sofisticação."
+    
+    },
+    
+    {
+      "nome": "Flora",
+      "image":"https://static.wikia.nocookie.net/winx/images/f/fc/Flora_Charmix.png/revision/latest?cb=20130507185704&path-prefix=pt",
+      "titulo": "Meu lindo vaso de planta",
+      "texto": "As belas flores são um dos mais encantadores presentes da natureza. Com suas cores vibrantes, formas delicadas e perfumes suaves, elas despertam sentimentos de alegria, paz e admiração em quem as observa. Cada flor carrega uma história, um simbolismo e uma beleza única — das rosas elegantes que representam o amor, às orquídeas exóticas que simbolizam o mistério e a sofisticação."
+    
+    },    {
+      "nome": "Flora",
+      "image":"https://m.media-amazon.com/images/I/71K89g-VRyL.jpg",
+      "titulo": "Meu lindo vaso de planta",
+      "texto": "As belas flores são um dos mais encantadores presentes da natureza. Com suas cores vibrantes, formas delicadas e perfumes suaves, elas despertam sentimentos de alegria, paz e admiração em quem as observa. Cada flor carrega uma história, um simbolismo e uma beleza única — das rosas elegantes que representam o amor, às orquídeas exóticas que simbolizam o mistério e a sofisticação."
+    
+    },    {
+      "nome": "Flora",
+      "image":"https://static.wikia.nocookie.net/clubdaswinx/images/c/cf/Flora_normal.png/revision/latest?cb=20160610152453&path-prefix=pt-br",
+      "titulo": "Meu lindo vaso de planta",
+      "texto": "As belas flores são um dos mais encantadores presentes da natureza. Com suas cores vibrantes, formas delicadas e perfumes suaves, elas despertam sentimentos de alegria, paz e admiração em quem as observa. Cada flor carrega uma história, um simbolismo e uma beleza única — das rosas elegantes que representam o amor, às orquídeas exóticas que simbolizam o mistério e a sofisticação."
+    
+    }
+    
+
+  ]
+}
