@@ -14,7 +14,6 @@ export default function PaginaPerfil() {
             <SafeAreaView>
                 <ScrollView>
                     <PerfilBar nome={posts[0].nome} />
-
                     {posts.map((item, index) => (
                         <Post
                             key={index}
@@ -24,7 +23,6 @@ export default function PaginaPerfil() {
                     ))}
 
                 </ScrollView>
-
             </SafeAreaView>
         </SafeAreaProvider>
 
