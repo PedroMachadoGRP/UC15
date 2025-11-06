@@ -4,8 +4,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from './screens/Home';
 import ProfileScreen from './screens/Profile';
-import { StackParamList } from './interface/NavigationInterfaces';
+import AboutScreen from './screens/About';
+import { BottomTabParamList, DrawerNavigationProps, StackParamList, TopNavigationProps } from './interface/NavigationInterfaces';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { SafeAreaProvider,SafeAreaView } from 'react-native-safe-area-context';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 const Stack = createNativeStackNavigator<StackParamList>();
 
@@ -23,24 +27,51 @@ const Stack = createNativeStackNavigator<StackParamList>();
 
 
 
-const Tab = createBottomTabNavigator<StackParamList>();
+const Tab = createBottomTabNavigator<BottomTabParamList>();
+const drawer = createDrawerNavigator<DrawerNavigationProps>();
+const top = createMaterialTopTabNavigator<TopNavigationProps>()
+// export default function App() {
+//   return (
+//     <NavigationContainer>
+//       <Tab.Navigator
+//         screenOptions={({ route }) => ({
+//           tabBarIcon: ({ color, size }) => {
+//             let iconName;
+//             if (route.name === 'Home') iconName = 'home-outline';
+//             if (route.name === 'About') iconName = 'person-outline';
+//             return <Ionicons name={iconName} size={size} color={color} />;
+//           },
+//           tabBarActiveTintColor:"purple",
+//           tabBarInactiveTintColor:"gray",
+//           tabBarStyle:{height:60},
+//           tabBarLabelStyle:{fontSize:17}
+//         })}
+//       >
+//         <Tab.Screen name="Home" component={HomeScreen} />
+//         <Tab.Screen name="About" component={AboutScreen} />
+//       </Tab.Navigator>
+//     </NavigationContainer>
+//   );
+// }
+
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ color, size }) => {
-            let iconName;
-            if (route.name === 'Home') iconName = 'home-outline';
-            if (route.name === 'Profile') iconName = 'person-outline';
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-        })}
-      >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <SafeAreaView style={{flex:1}}>
+        <NavigationContainer>
+          <top.Navigator screenOptions={{
+            tabBarActiveTintColor: "purple",
+            tabBarInactiveTintColor: "gray",
+            tabBarStyle: { height: 60 },
+            tabBarLabelStyle: { fontSize: 17 }
+          }}>
+            <top.Screen name="Home" component={HomeScreen} />
+            <top.Screen name="About" component={AboutScreen} />
+          </top.Navigator>
+        </NavigationContainer>
+      </SafeAreaView>
+    </SafeAreaProvider>
+
   );
 }

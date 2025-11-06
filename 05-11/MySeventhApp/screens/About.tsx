@@ -1,16 +1,21 @@
 import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { AboutScreenProps, AboutScreenPropsDrawer, AboutScreenPropsTop } from '../interface/NavigationInterfaces'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
-export default function About({navigation} :any) {
+export default function About({navigation} :AboutScreenPropsTop) {
   return (
+    <SafeAreaView>
     <View style={styles.container}>
       <Text style={styles.text}>About</Text>
 
       
-    <Button title='Ir para profile' onPress={()=> navigation.goBack('profile')}>
+    <Button title='Ir para profile' onPress={()=> navigation.goBack()}>
         
     </Button>
     </View>
+
+    </SafeAreaView>
 
   )
 }
